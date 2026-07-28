@@ -1,1 +1,17 @@
 # the-healthy-trend-trader
+
+THE HEALTHY TREND FOLLOWER — SITE UNIFICADO
+
+Abra index.html no navegador.
+
+WHATSAPP:
+No final do index.html, localize:
+const HEALTHY_TREND_WHATSAPP='';
+Insira o número com DDI e DDD, somente números. Exemplo: 5511999999999
+
+O site foi preparado com:
+- narrativa unificada de manifesto, método, playbook e vendas;
+- layout responsivo premium;
+- exemplos de trades sem zoom, comprimidos e com áreas sensíveis protegidas;
+- CTAs para WhatsApp;
+- aviso educacional.
