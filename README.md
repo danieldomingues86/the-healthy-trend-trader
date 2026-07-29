@@ -1,17 +1,23 @@
-# the-healthy-trend-trader
+# The Healthy Trend Follower — Site Premium
 
-THE HEALTHY TREND FOLLOWER — SITE UNIFICADO
+Site estático preparado para publicação no GitHub Pages.
 
-Abra index.html no navegador.
+## Publicação
 
-WHATSAPP:
-No final do index.html, localize:
-const HEALTHY_TREND_WHATSAPP='';
-Insira o número com DDI e DDD, somente números. Exemplo: 5511999999999
+1. Envie **todo o conteúdo desta pasta** para a raiz do repositório.
+2. Confirme que `index.html`, `css`, `js` e `assets` estão no mesmo nível.
+3. Em **Settings → Pages**, selecione:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/(root)`
+4. Aguarde o deploy.
 
-O site foi preparado com:
-- narrativa unificada de manifesto, método, playbook e vendas;
-- layout responsivo premium;
-- exemplos de trades sem zoom, comprimidos e com áreas sensíveis protegidas;
-- CTAs para WhatsApp;
-- aviso educacional.
+## WhatsApp
+
+Abra `js/main.js` e preencha:
+
+```js
+const WHATSAPP_NUMBER = '5511999999999';
+```
+
+Use somente números, incluindo DDI e DDD.

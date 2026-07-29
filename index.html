@@ -1,35 +1,162 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Healthy Trend Follower | Opere saúde, não ruído</title>
-<meta name="description" content="Uma filosofia e um método de trend following baseado em contexto saudável, qualidade A+, paciência e gestão de risco.">
-<style>
-:root{--bg:#06100d;--bg2:#091914;--card:#0d201a;--line:rgba(158,211,178,.18);--text:#eef7f1;--muted:#a7beb0;--green:#8ce0a8;--lime:#c8f27e;--gold:#d7bd79;--danger:#df8d8d;--shadow:0 24px 90px rgba(0,0,0,.38)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 70% 0,#15352a 0,transparent 34%),linear-gradient(180deg,#06100d,#071511 56%,#040a08);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}a{color:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}.nav{position:sticky;top:0;z-index:30;background:rgba(5,14,11,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:74px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:.02em;white-space:nowrap}.mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#183f30,#0b251b);border:1px solid rgba(166,235,190,.28);box-shadow:0 0 35px rgba(98,220,142,.15)}.links{display:flex;gap:22px;align-items:center;font-size:14px;color:#c2d3c8}.links a{text-decoration:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:999px;border:1px solid rgba(161,236,188,.35);text-decoration:none;font-weight:850;background:linear-gradient(135deg,#67cf8d,#b3e87c);color:#092015;box-shadow:0 14px 40px rgba(93,207,135,.18);transition:.25s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.ghost{background:rgba(255,255,255,.035);color:var(--text);box-shadow:none}.hero{min-height:830px;display:grid;align-items:center;position:relative;padding:90px 0 70px}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,12,9,.97) 0%,rgba(4,12,9,.78) 48%,rgba(4,12,9,.1) 100%),url('assets/arvore-raizes.png') 84% 48%/auto 88% no-repeat;z-index:-1}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--lime);font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase}.eyebrow:before{content:"";width:34px;height:1px;background:currentColor}.hero h1{font-size:clamp(52px,7.4vw,103px);line-height:.94;letter-spacing:-.065em;max-width:900px;margin:22px 0}.hero h1 span{display:block;color:var(--green)}.lead{max-width:700px;color:#c2d5c9;font-size:clamp(18px,2vw,23px)}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:34px}.proof{display:flex;gap:30px;flex-wrap:wrap;margin-top:54px;color:#afc5b7}.proof b{display:block;color:#fff;font-size:22px}.section{padding:105px 0}.section.alt{background:linear-gradient(180deg,rgba(255,255,255,.018),rgba(255,255,255,.004));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.kicker{color:var(--lime);font-size:12px;font-weight:900;letter-spacing:.17em;text-transform:uppercase}.title{font-size:clamp(36px,5vw,66px);line-height:1.02;letter-spacing:-.045em;margin:13px 0 20px;max-width:900px}.sub{font-size:19px;color:var(--muted);max-width:770px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.card{padding:28px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(20,47,37,.8),rgba(7,21,16,.8));box-shadow:var(--shadow)}.card .num{font-size:12px;color:var(--lime);font-weight:900;letter-spacing:.15em}.card h3{font-size:24px;margin:16px 0 8px}.card p{color:var(--muted);margin:0}.visual{border-radius:28px;overflow:hidden;border:1px solid var(--line);background:#07100d;box-shadow:var(--shadow)}.visual img{display:block;width:100%;height:auto;user-select:none;pointer-events:none}.contrast{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}.side{border-radius:26px;padding:34px;border:1px solid var(--line);background:rgba(255,255,255,.025)}.side.bad{border-color:rgba(223,141,141,.26)}.side.good{border-color:rgba(140,224,168,.32);background:linear-gradient(145deg,rgba(20,61,43,.46),rgba(7,22,16,.7))}.side h3{font-size:28px;margin:5px 0 14px}.side ul,.check ul{padding:0;margin:20px 0 0;list-style:none}.side li,.check li{padding:10px 0 10px 30px;position:relative;color:#bed0c4;border-bottom:1px solid rgba(255,255,255,.06)}.side li:before,.check li:before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:900}.bad li:before{content:'×';color:var(--danger)}.quote{font-family:Georgia,serif;font-size:clamp(28px,4vw,50px);line-height:1.2;max-width:980px;color:#eef8f1;margin:0}.quote em{color:var(--green)}.gallery{margin-top:44px;overflow:hidden}.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 18px;scrollbar-width:thin}.trade{min-width:min(820px,88vw);scroll-snap-align:center;border:1px solid var(--line);border-radius:21px;overflow:hidden;background:#050a08;position:relative}.trade img{display:block;width:100%;pointer-events:none;user-select:none;-webkit-user-drag:none}.trade:after{content:'Visual protegido • configurações proprietárias';position:absolute;right:14px;top:14px;background:rgba(4,11,8,.82);border:1px solid var(--line);padding:7px 10px;border-radius:99px;font-size:10px;color:#b8c9be;text-transform:uppercase;letter-spacing:.08em}.gallery-note{color:#91a79a;font-size:13px}.check{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:stretch}.checkpanel{padding:34px;border-radius:27px;border:1px solid var(--line);background:linear-gradient(145deg,#10291f,#071610)}.manifesto{padding:70px;border-radius:34px;background:radial-gradient(circle at 80% 10%,rgba(122,226,159,.15),transparent 40%),linear-gradient(145deg,#0d271c,#07130f);border:1px solid rgba(156,228,182,.23);box-shadow:var(--shadow)}.manifesto p{font-size:20px;color:#bfd1c6;max-width:900px}.manifesto strong{color:#fff}.cta{padding:90px 0 120px;text-align:center}.cta-box{padding:70px 30px;border-radius:36px;border:1px solid rgba(175,236,197,.26);background:radial-gradient(circle at 50% -20%,rgba(113,220,151,.22),transparent 46%),#0a1b14;box-shadow:var(--shadow)}.cta-box h2{font-size:clamp(40px,6vw,73px);line-height:1;letter-spacing:-.05em;margin:0 auto 20px;max-width:850px}.cta-box p{color:var(--muted);max-width:680px;margin:0 auto 30px;font-size:19px}.footer{border-top:1px solid var(--line);padding:35px 0;color:#81988a;font-size:13px}.floating{position:fixed;right:20px;bottom:20px;z-index:40}.mobile-only{display:none}
-@media(max-width:900px){.links a:not(.btn){display:none}.hero{min-height:760px}.hero:after{background:linear-gradient(180deg,rgba(4,12,9,.78),rgba(4,12,9,.98)),url('assets/arvore-raizes.png') 50% 35%/auto 72% no-repeat}.cards{grid-template-columns:1fr}.grid2,.contrast,.check{grid-template-columns:1fr}.manifesto{padding:36px 25px}.section{padding:76px 0}.proof{gap:18px}.floating{display:none}.mobile-only{display:inline-flex}.brand span:last-child{font-size:14px}}
-@media(max-width:560px){.wrap{width:min(100% - 26px,1180px)}.navin{height:66px}.links .btn{display:none}.hero h1{font-size:50px}.hero{padding-top:65px}.actions .btn{width:100%}.title{font-size:39px}.side,.card,.checkpanel{padding:24px}.trade{min-width:94vw}.cta-box{padding:55px 18px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#06110d">
+  <meta name="robots" content="index, follow">
+  <title>The Healthy Trend Follower | Opere saúde, não ruído</title>
+  <meta name="description" content="Uma filosofia premium de trend following baseada em contexto saudável, qualidade A+, paciência, clareza e gestão de risco.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Healthy Trend Follower">
+  <meta property="og:description" content="Escolha o ambiente certo. E tudo flui.">
+  <meta property="og:image" content="assets/images/manifesto-visual.png">
+  <link rel="preload" as="image" href="assets/images/arvore-raizes.png">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<nav class="nav"><div class="wrap navin"><a class="brand" href="#top"><span class="mark">🌿</span><span>The Healthy Trend Follower</span></a><div class="links"><a href="#filosofia">Filosofia</a><a href="#metodo">Método</a><a href="#playbook">Playbook</a><a class="btn js-whatsapp" href="#contato">Quero aprender</a></div></div></nav>
-<header class="hero" id="top"><div class="wrap"><div class="eyebrow">Opere saúde, não ruído</div><h1>Escolha o ambiente certo.<span>E tudo flui.</span></h1><p class="lead">Um método de trend following criado para reconhecer ecossistemas A+, rejeitar o caos e participar somente quando direção, estrutura, comportamento e risco trabalham em harmonia.</p><div class="actions"><a class="btn js-whatsapp" href="#contato">Conhecer o método</a><a class="btn ghost" href="#filosofia">Entender a filosofia ↓</a></div><div class="proof"><div><b>Qualidade</b>acima de quantidade</div><div><b>Clareza</b>acima de antecipação</div><div><b>Saúde</b>antes do crescimento</div></div></div></header>
-<main>
-<section class="section" id="filosofia"><div class="wrap"><span class="kicker">A mudança central</span><h2 class="title">O mercado entrega a experiência que você persegue.</h2><p class="sub">Quando você busca ação, antecipação e emoção, encontra ruído. Quando escolhe paciência, alinhamento e qualidade, encontra clareza. O objetivo não é vencer qualquer mercado — é preservar capital e mente até surgir o ambiente certo.</p><div class="contrast"><article class="side bad"><span class="kicker">Ambiente de transição</span><h3>Operar o sofrimento</h3><p>A estrutura ainda tenta se organizar. O preço exige interpretação, produz falsos movimentos e transforma cada decisão em luta.</p><ul><li>Necessidade inconsciente de agir</li><li>Medo de perder a oportunidade</li><li>Confusão entre dificuldade e mérito</li><li>Ansiedade, dúvida e interferência</li></ul></article><article class="side good"><span class="kicker">Ambiente 100% alinhado</span><h3>Operar a fluidez</h3><p>O mercado já demonstrou força. A leitura fica simples, o risco pode ser definido e a probabilidade trabalha com mais clareza.</p><ul><li>Contexto estruturalmente saudável</li><li>Tendência clara e madura</li><li>Menos ruído e menos estresse</li><li>Decisões objetivas e disciplinadas</li></ul></article></div></div></section>
-<section class="section alt"><div class="wrap grid2"><div><span class="kicker">Natureza do método</span><h2 class="title">Tudo passa por transições.</h2><p class="sub">O inverno não vira verão em um único dia. O amanhecer não se apressa. O mercado também precisa de tempo para transformar caos em ordem.</p><p class="sub">A malha adaptativa não tenta prever. Ela revela o estado atual: turbulência, transição, alinhamento parcial ou um ecossistema plenamente saudável.</p></div><figure class="visual"><img src="assets/malha-adaptativa.png" alt="Jornada visual da malha adaptativa do caos ao alinhamento"></figure></div></section>
-<section class="section" id="metodo"><div class="wrap"><span class="kicker">A estrutura operacional</span><h2 class="title">Saúde primeiro. O crescimento vem depois.</h2><p class="sub">Uma floresta não prospera pela pressa. Ela cresce quando solo, raízes, luz e tempo trabalham em harmonia. No trading, contexto, execução e risco formam o mesmo ecossistema.</p><div class="cards"><article class="card"><span class="num">01 · CONTEXTO</span><h3>O Diário autoriza</h3><p>O contexto maior precisa demonstrar direção, sustentação, maturidade e comportamento saudável antes que qualquer operação seja considerada.</p></article><article class="card"><span class="num">02 · EXECUÇÃO</span><h3>O 4H executa</h3><p>A entrada nasce de uma contração saudável e de um gatilho claro. O método não persegue expansão nem compra impulso.</p></article><article class="card"><span class="num">03 · SOBREVIVÊNCIA</span><h3>O risco sustenta</h3><p>Position sizing, volatilidade e disciplina são as raízes invisíveis. Sem elas, nenhuma tendência produz prosperidade sustentável.</p></article></div></div></section>
-<section class="section alt"><div class="wrap grid2"><figure class="visual"><img src="assets/arvore-contexto.png" alt="Árvore saudável comparada a uma estrutura em deterioração"></figure><div><span class="kicker">A árvore do contexto</span><h2 class="title">A estrutura é a raiz. O preço é o crescimento visível.</h2><p class="sub">Quando a estrutura sustenta o preço, o contexto floresce. Quando essa sustentação perde força e tudo começa a se misturar, a qualidade se deteriora — e o trade deixa de ser permitido.</p><div class="cards" style="grid-template-columns:1fr;margin-top:28px"><article class="card"><h3>Raízes fortes</h3><p>Camadas técnicas proprietárias organizadas, inclinação coerente e sustentação objetiva.</p></article><article class="card"><h3>Crescimento saudável</h3><p>Direção clara, expansão controlada e leitura que não exige justificativas criativas.</p></article><article class="card"><h3>Deterioração rejeita</h3><p>Estrutura cruzada, preço entrelaçado e força diminuindo são uma ordem para não operar.</p></article></div></div></div></section>
-<section class="section"><div class="wrap"><p class="quote">“Eu não preciso procurar dificuldade onde ela não é necessária. <em>Prosperidade vem da saúde do sistema</em>, não da tentativa de antecipar o próximo movimento.”</p></div></section>
-<section class="section alt" id="playbook"><div class="wrap"><span class="kicker">Playbook visual</span><h2 class="title">O mesmo princípio, repetido em contextos reais.</h2><p class="sub">Os exemplos mostram a filosofia em ação sem revelar a configuração proprietária. Observe a paciência antes da execução, a clareza do contexto e a repetição da mesma lógica de decisão.</p><div class="gallery"><div class="track"><figure class="trade"><img src="assets/trades/trade-01.webp" alt="Exemplo protegido de contexto saudável 1" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-02.webp" alt="Exemplo protegido de contexto saudável 2" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-03.webp" alt="Exemplo protegido de contexto saudável 3" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-04.webp" alt="Exemplo protegido de contexto saudável 4" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-05.webp" alt="Exemplo protegido de contexto saudável 5" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-06.webp" alt="Exemplo protegido de contexto saudável 6" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-07.webp" alt="Exemplo protegido de contexto saudável 7" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-08.webp" alt="Exemplo protegido de contexto saudável 8" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-09.webp" alt="Exemplo protegido de contexto saudável 9" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-10.webp" alt="Exemplo protegido de contexto saudável 10" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-11.webp" alt="Exemplo protegido de contexto saudável 11" loading="lazy"></figure><figure class="trade"><img src="assets/trades/trade-12.webp" alt="Exemplo protegido de contexto saudável 12" loading="lazy"></figure></div><p class="gallery-note">Arraste horizontalmente para navegar. As imagens são prévias protegidas, sem zoom e com áreas sensíveis ocultadas.</p></div></div></section>
-<section class="section"><div class="wrap check"><div class="checkpanel"><span class="kicker">Filtro A+</span><h2 class="title" style="font-size:48px">O trade está realmente autorizado?</h2><ul><li>O contexto maior demonstra saúde e direção?</li><li>A estrutura está alinhada e sustentando o preço?</li><li>O comportamento está calmo e controlado?</li><li>A execução ocorre em contração, sem perseguição?</li><li>O risco está dimensionado antes da entrada?</li><li>A leitura é clara sem precisar “interpretar demais”?</li></ul></div><div class="checkpanel"><span class="kicker">Regra de rejeição</span><h3 style="font-size:34px;line-height:1.1">A ferramenta não procura motivos para entrar.</h3><p class="sub">Ela procura razões para rejeitar tudo que não atinge o nível máximo de qualidade.</p><p style="color:var(--green);font-weight:900;font-size:21px">Não é operar mais.<br>É selecionar melhor.</p></div></div></section>
-<section class="section alt"><div class="wrap"><div class="manifesto"><span class="kicker">Manifesto</span><h2 class="title">Menos luta. Mais clareza. Mais consistência.</h2><p>Eu não persigo movimentos. <strong>Eu espero.</strong> Não tento provar que consigo operar em qualquer condição. Eu escolho preservar meu capital, minha energia e minha mente.</p><p>Respeito as transições. Entendo que ordem precisa de tempo para surgir. Quando saúde, direção e tranquilidade aparecem juntas, participo de forma disciplinada.</p><p><strong>Meu trabalho não é prever o futuro.</strong> Meu trabalho é reconhecer qualidade, executar o plano e permitir que uma tendência saudável tenha tempo para amadurecer.</p></div></div></section>
-<section class="cta" id="contato"><div class="wrap"><div class="cta-box"><span class="kicker">The Healthy Trend Follower</span><h2>Você não precisa operar mais. Precisa reconhecer melhor.</h2><p>Aprenda a identificar contextos realmente saudáveis, rejeitar operações medianas e executar apenas quando a qualidade estiver evidente.</p><a class="btn js-whatsapp" href="#">Quero aprender pelo WhatsApp</a></div></div></section>
-</main>
-<a class="btn floating js-whatsapp" href="#" aria-label="Falar pelo WhatsApp">WhatsApp</a>
-<footer class="footer"><div class="wrap">Conteúdo educacional. Não constitui recomendação de investimento. © 2026 The Healthy Trend Follower.</div></footer>
-<script>
-const HEALTHY_TREND_WHATSAPP='';
-const MESSAGE='Olá, Daniel! Conheci o The Healthy Trend Follower e quero saber mais sobre o método.';
-document.querySelectorAll('.js-whatsapp').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const n=HEALTHY_TREND_WHATSAPP.replace(/\D/g,'');const url=n?`https://wa.me/${n}?text=${encodeURIComponent(MESSAGE)}`:`https://api.whatsapp.com/send?text=${encodeURIComponent(MESSAGE)}`;window.open(url,'_blank','noopener');}));
-</script>
-</body></html>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Navegação principal">
+      <a class="brand" href="#top" aria-label="Início">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span class="brand-copy"><strong>The Healthy Trend</strong><small>Follower</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="#filosofia">Filosofia</a>
+        <a href="#ecossistema">Ecossistema</a>
+        <a href="#metodo">Método</a>
+        <a href="#playbook">Playbook</a>
+        <a class="button button-small js-whatsapp" href="#contato">Quero aprender</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Opere saúde, não ruído</p>
+          <h1>Escolha o ambiente certo.<br><em>E tudo flui.</em></h1>
+          <p class="hero-lead">Um método de trend following criado para reconhecer ecossistemas A+, rejeitar o caos e participar somente quando direção, estrutura, comportamento e risco trabalham em harmonia.</p>
+          <div class="hero-actions">
+            <a class="button js-whatsapp" href="#contato">Conhecer o método <span>↗</span></a>
+            <a class="button button-ghost" href="#filosofia">Entender a filosofia <span>↓</span></a>
+          </div>
+          <div class="principles" aria-label="Princípios do método">
+            <div><strong>Qualidade</strong><span>acima de quantidade</span></div>
+            <div><strong>Clareza</strong><span>acima de antecipação</span></div>
+            <div><strong>Saúde</strong><span>antes do crescimento</span></div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#filosofia" aria-label="Continuar"><span></span>Explore</a>
+    </section>
+
+    <section class="section philosophy" id="filosofia">
+      <div class="shell">
+        <div class="section-intro reveal">
+          <p class="eyebrow">A mudança central</p>
+          <h2>O mercado entrega a experiência que você persegue.</h2>
+          <p>Quando você busca ação, antecipação e emoção, encontra ruído. Quando escolhe paciência, alinhamento e qualidade, encontra clareza. O objetivo não é vencer qualquer mercado — é preservar capital e mente até surgir o ambiente certo.</p>
+        </div>
+        <div class="dual-cards">
+          <article class="contrast-card contrast-bad reveal">
+            <span class="card-index">01</span>
+            <p class="micro-label">Ambiente de transição</p>
+            <h3>Operar o sofrimento</h3>
+            <p>A estrutura ainda tenta se organizar. O preço exige interpretação, produz falsos movimentos e transforma cada decisão em luta.</p>
+            <ul><li>Necessidade inconsciente de agir</li><li>Medo de perder a oportunidade</li><li>Confusão entre dificuldade e mérito</li><li>Ansiedade, dúvida e interferência</li></ul>
+          </article>
+          <article class="contrast-card contrast-good reveal">
+            <span class="card-index">02</span>
+            <p class="micro-label">Ambiente 100% alinhado</p>
+            <h3>Operar a fluidez</h3>
+            <p>O mercado já demonstrou força. A leitura fica simples, o risco pode ser definido e a probabilidade trabalha com mais clareza.</p>
+            <ul><li>Contexto estruturalmente saudável</li><li>Tendência clara e madura</li><li>Menos ruído e menos estresse</li><li>Decisões objetivas e disciplinadas</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section visual-story section-dark" id="ecossistema">
+      <div class="shell split-layout">
+        <div class="visual-frame reveal"><img src="assets/images/malha-adaptativa.png" alt="Jornada da malha adaptativa, do caos ao alinhamento" loading="lazy"></div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">Natureza do método</p>
+          <h2>Tudo passa por transições.</h2>
+          <p>O inverno não vira verão em um único dia. O amanhecer não se apressa. O mercado também precisa de tempo para transformar caos em ordem.</p>
+          <p>A malha adaptativa não tenta prever. Ela revela o estado atual: turbulência, transição, alinhamento parcial ou um ecossistema plenamente saudável.</p>
+          <div class="status-line"><span></span><strong>Observar → esperar → confirmar → executar</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method" id="metodo">
+      <div class="shell">
+        <div class="section-intro reveal">
+          <p class="eyebrow">A estrutura operacional</p>
+          <h2>Saúde primeiro.<br>O crescimento vem depois.</h2>
+          <p>Uma floresta não prospera pela pressa. Ela cresce quando solo, raízes, luz e tempo trabalham em harmonia. No trading, contexto, execução e risco formam o mesmo ecossistema.</p>
+        </div>
+        <div class="method-grid">
+          <article class="method-card reveal"><span>01</span><div class="method-icon">⌁</div><p class="micro-label">Contexto</p><h3>O Diário autoriza</h3><p>O contexto maior precisa demonstrar direção, sustentação, maturidade e comportamento saudável antes que qualquer operação seja considerada.</p></article>
+          <article class="method-card featured reveal"><span>02</span><div class="method-icon">↗</div><p class="micro-label">Execução</p><h3>O 4H executa</h3><p>A entrada nasce de uma contração saudável e de um gatilho claro. O método não persegue expansão nem compra impulso.</p></article>
+          <article class="method-card reveal"><span>03</span><div class="method-icon">◇</div><p class="micro-label">Sobrevivência</p><h3>O risco sustenta</h3><p>Position sizing, volatilidade e disciplina são as raízes invisíveis. Sem elas, nenhuma tendência produz prosperidade sustentável.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roots section-dark">
+      <div class="shell split-layout reverse">
+        <div class="story-copy reveal">
+          <p class="eyebrow">A árvore do contexto</p>
+          <h2>A estrutura é a raiz. O preço é o crescimento visível.</h2>
+          <p>Quando a estrutura sustenta o preço, o contexto floresce. Quando essa sustentação perde força e tudo começa a se misturar, a qualidade se deteriora — e o trade deixa de ser permitido.</p>
+          <div class="root-points"><div><span>01</span><p><strong>Raízes fortes</strong> Camadas técnicas proprietárias organizadas e sustentação objetiva.</p></div><div><span>02</span><p><strong>Crescimento saudável</strong> Direção clara, expansão controlada e leitura simples.</p></div><div><span>03</span><p><strong>Deterioração rejeita</strong> Estrutura cruzada, preço entrelaçado e força diminuindo.</p></div></div>
+        </div>
+        <div class="visual-frame reveal"><img src="assets/images/arvore-contexto.png" alt="Árvore saudável comparada a uma estrutura em deterioração" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="statement section-dark"><div class="shell reveal"><p>“Eu não preciso procurar dificuldade onde ela não é necessária. <em>Prosperidade vem da saúde do sistema</em>, não da tentativa de antecipar o próximo movimento.”</p></div></section>
+
+    <section class="section playbook" id="playbook">
+      <div class="shell">
+        <div class="section-intro reveal"><p class="eyebrow">Playbook visual</p><h2>O mesmo princípio,<br>repetido em contextos reais.</h2><p>Os exemplos mostram a filosofia em ação sem revelar a configuração proprietária. Observe a paciência antes da execução, a clareza do contexto e a repetição da mesma lógica de decisão.</p></div>
+        <div class="carousel reveal" aria-label="Exemplos de trades">
+          <button class="carousel-button prev" aria-label="Exemplo anterior">←</button>
+          <div class="carousel-viewport"><div class="carousel-track">
+            <figure class="trade-card"><img src="assets/trades/trade-01.webp" alt="Exemplo protegido 1" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-02.webp" alt="Exemplo protegido 2" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-03.webp" alt="Exemplo protegido 3" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-04.webp" alt="Exemplo protegido 4" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-05.webp" alt="Exemplo protegido 5" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-06.webp" alt="Exemplo protegido 6" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-07.webp" alt="Exemplo protegido 7" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-08.webp" alt="Exemplo protegido 8" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-09.webp" alt="Exemplo protegido 9" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-10.webp" alt="Exemplo protegido 10" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-11.webp" alt="Exemplo protegido 11" loading="lazy"></figure><figure class="trade-card"><img src="assets/trades/trade-12.webp" alt="Exemplo protegido 12" loading="lazy"></figure>
+          </div></div>
+          <button class="carousel-button next" aria-label="Próximo exemplo">→</button>
+        </div>
+        <div class="carousel-meta"><span class="carousel-counter">01 / 12</span><p>Prévias protegidas, sem zoom e com áreas sensíveis ocultadas.</p></div>
+      </div>
+    </section>
+
+    <section class="section filter section-dark">
+      <div class="shell filter-grid">
+        <div class="filter-main reveal"><p class="eyebrow">Filtro A+</p><h2>O trade está realmente autorizado?</h2><div class="check-list"><div><span>✓</span>O contexto maior demonstra saúde e direção?</div><div><span>✓</span>A estrutura está alinhada e sustentando o preço?</div><div><span>✓</span>O comportamento está calmo e controlado?</div><div><span>✓</span>A execução ocorre em contração, sem perseguição?</div><div><span>✓</span>O risco está dimensionado antes da entrada?</div><div><span>✓</span>A leitura é clara sem precisar interpretar demais?</div></div></div>
+        <aside class="rejection-card reveal"><p class="micro-label">Regra de rejeição</p><h3>A ferramenta não procura motivos para entrar.</h3><p>Ela procura razões para rejeitar tudo que não atinge o nível máximo de qualidade.</p><strong>Não é operar mais.<br>É selecionar melhor.</strong></aside>
+      </div>
+    </section>
+
+    <section class="section manifesto">
+      <div class="shell"><div class="manifesto-panel reveal"><p class="eyebrow">Manifesto</p><h2>Menos luta.<br>Mais clareza.<br>Mais consistência.</h2><div class="manifesto-copy"><p>Eu não persigo movimentos. <strong>Eu espero.</strong> Não tento provar que consigo operar em qualquer condição. Eu escolho preservar meu capital, minha energia e minha mente.</p><p>Respeito as transições. Entendo que ordem precisa de tempo para surgir. Quando saúde, direção e tranquilidade aparecem juntas, participo de forma disciplinada.</p><p><strong>Meu trabalho não é prever o futuro.</strong> Meu trabalho é reconhecer qualidade, executar o plano e permitir que uma tendência saudável tenha tempo para amadurecer.</p></div></div></div>
+    </section>
+
+    <section class="cta section-dark" id="contato">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="shell cta-inner reveal"><p class="eyebrow">The Healthy Trend Follower</p><h2>Você não precisa operar mais.<br><em>Precisa reconhecer melhor.</em></h2><p>Aprenda a identificar contextos realmente saudáveis, rejeitar operações medianas e executar apenas quando a qualidade estiver evidente.</p><a class="button js-whatsapp" href="#">Quero aprender pelo WhatsApp <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer><div class="shell footer-grid"><div class="brand footer-brand"><span class="brand-mark"><span></span></span><span class="brand-copy"><strong>The Healthy Trend</strong><small>Follower</small></span></div><p>Conteúdo educacional. Não constitui recomendação de investimento.</p><p>© 2026 The Healthy Trend Follower.</p></div></footer>
+  <a class="floating-whatsapp js-whatsapp" href="#" aria-label="Falar pelo WhatsApp"><span>↗</span>WhatsApp</a>
+  <script src="js/main.js"></script>
+</body>
+</html>
