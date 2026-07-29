@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = ''; // Exemplo: 5511999999999
+const WHATSAPP_NUMBER = '5511963065856'; // Exemplo: 5511999999999
 const WHATSAPP_MESSAGE = 'Olá, Daniel! Conheci o The Healthy Trend Follower e quero saber mais sobre o método.';
 
 const header = document.querySelector('.site-header');
