@@ -1,23 +1,13 @@
-# The Healthy Trend Follower — Site Premium
+# The Healthy Trend Trader — V2
 
-Site estático preparado para publicação no GitHub Pages.
+Estrutura completa do protótipo:
 
-## Publicação
+- `index.html`: página principal
+- `styles.css`: estilos visuais e responsividade
+- `script.js`: interações, menu e formulário demonstrativo
+- `assets/images/`: imagens institucionais
+- `assets/trades/`: imagens demonstrativas de operações
 
-1. Envie **todo o conteúdo desta pasta** para a raiz do repositório.
-2. Confirme que `index.html`, `css`, `js` e `assets` estão no mesmo nível.
-3. Em **Settings → Pages**, selecione:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/(root)`
-4. Aguarde o deploy.
+## Como abrir
 
-## WhatsApp
-
-Abra `js/main.js` e preencha:
-
-```js
-const WHATSAPP_NUMBER = '5511999999999';
-```
-
-Use somente números, incluindo DDI e DDD.
+Extraia o ZIP e abra `index.html` no navegador. Mantenha todos os arquivos e pastas juntos.
