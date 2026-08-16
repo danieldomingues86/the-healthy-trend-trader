@@ -42,3 +42,59 @@
 #livros .collection-showcase img{display:block;width:100%;height:auto}
 #livros .story-copy h2{font-size:clamp(42px,4.2vw,66px)}
 @media(max-width:1100px){#livros .library-grid{grid-template-columns:1fr;gap:42px}#livros .collection-showcase{max-width:none}}
+
+/* V9 — align homepage Books section with the site's standard shell */
+#livros.library{
+  padding:110px 0!important;
+}
+#livros .library-grid{
+  width:var(--shell)!important;
+  max-width:none!important;
+  grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr)!important;
+  gap:72px!important;
+  align-items:center!important;
+}
+#livros .book-visual{
+  width:100%!important;
+  justify-content:center!important;
+}
+#livros .collection-showcase{
+  width:100%!important;
+  max-width:680px!important;
+  margin:0 auto!important;
+  border-radius:24px!important;
+}
+#livros .collection-showcase img{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+}
+#livros .story-copy{
+  max-width:520px!important;
+}
+#livros .story-copy h2{
+  font-size:clamp(42px,4.6vw,64px)!important;
+}
+@media(max-width:1000px){
+  #livros.library{
+    padding:86px 0!important;
+  }
+  #livros .library-grid{
+    grid-template-columns:1fr!important;
+    gap:48px!important;
+  }
+  #livros .collection-showcase{
+    max-width:760px!important;
+  }
+  #livros .story-copy{
+    max-width:760px!important;
+  }
+}
+@media(max-width:640px){
+  #livros.library{
+    padding:72px 0!important;
+  }
+  #livros .library-grid{
+    gap:34px!important;
+  }
+}
